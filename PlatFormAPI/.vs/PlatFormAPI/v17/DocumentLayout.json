@@ -1,0 +1,317 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\PlatFormAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A10B629C-8F8F-4B1C-9BBF-396818E13CD9}|PlatFormAPI.csproj|f:\\projects\\ongit\\vesinhmoitruong\\platformapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10B629C-8F8F-4B1C-9BBF-396818E13CD9}|PlatFormAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10B629C-8F8F-4B1C-9BBF-396818E13CD9}|PlatFormAPI.csproj|f:\\projects\\ongit\\vesinhmoitruong\\platformapi\\controllers\\saleordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10B629C-8F8F-4B1C-9BBF-396818E13CD9}|PlatFormAPI.csproj|solutionrelative:controllers\\saleordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\vesinhmoitruong\\gm_dal\\iservices\\isaleorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\vesinhmoitruong\\gm_dal\\services\\saleorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\vesinhmoitruong\\gm_dal\\services\\routesaleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10B629C-8F8F-4B1C-9BBF-396818E13CD9}|PlatFormAPI.csproj|f:\\projects\\ongit\\vesinhmoitruong\\platformapi\\controllers\\routesalecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10B629C-8F8F-4B1C-9BBF-396818E13CD9}|PlatFormAPI.csproj|solutionrelative:controllers\\routesalecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\vesinhmoitruong\\gm_dal\\apimodels\\saleorder\\searchiorderbycustomerfiltermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\vesinhmoitruong\\gm_dal\\apimodels\\saleorder\\searchordermobilefitlermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\vesinhmoitruong\\gm_dal\\apimodels\\customer\\searchcustomerforsalerfiltermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10B629C-8F8F-4B1C-9BBF-396818E13CD9}|PlatFormAPI.csproj|f:\\projects\\ongit\\vesinhmoitruong\\platformapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10B629C-8F8F-4B1C-9BBF-396818E13CD9}|PlatFormAPI.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\vesinhmoitruong\\gm_dal\\iservices\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\vesinhmoitruong\\gm_dal\\iservices\\iroutesaleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\vesinhmoitruong\\gm_dal\\apimodels\\customer\\searchcustomerforsalergridmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\vesinhmoitruong\\gm_dal\\models\\routesale\\routesalemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10B629C-8F8F-4B1C-9BBF-396818E13CD9}|PlatFormAPI.csproj|f:\\projects\\ongit\\vesinhmoitruong\\platformapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A10B629C-8F8F-4B1C-9BBF-396818E13CD9}|PlatFormAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\vesinhmoitruong\\gm_dal\\gmdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\vesinhmoitruong\\gm_dal\\models\\user\\userinfomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\vesinhmoitruong\\gm_dal\\enum\\resultcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RouteSaleService.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\Services\\RouteSaleService.cs",
+              "RelativeDocumentMoniker": "..\\GM_DAL\\Services\\RouteSaleService.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\Services\\RouteSaleService.cs",
+              "RelativeToolTip": "..\\GM_DAL\\Services\\RouteSaleService.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAUwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T10:07:57.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SaleOrderController.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\PlatFormAPI\\Controllers\\SaleOrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SaleOrderController.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\PlatFormAPI\\Controllers\\SaleOrderController.cs",
+              "RelativeToolTip": "Controllers\\SaleOrderController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAcwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T09:55:11.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ISaleOrderService.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\IServices\\ISaleOrderService.cs",
+              "RelativeDocumentMoniker": "..\\GM_DAL\\IServices\\ISaleOrderService.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\IServices\\ISaleOrderService.cs",
+              "RelativeToolTip": "..\\GM_DAL\\IServices\\ISaleOrderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBEAAAB3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T03:39:17.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SaleOrderService.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\Services\\SaleOrderService.cs",
+              "RelativeDocumentMoniker": "..\\GM_DAL\\Services\\SaleOrderService.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\Services\\SaleOrderService.cs",
+              "RelativeToolTip": "..\\GM_DAL\\Services\\SaleOrderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHsAAAB8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T03:38:38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RouteSaleController.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\PlatFormAPI\\Controllers\\RouteSaleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RouteSaleController.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\PlatFormAPI\\Controllers\\RouteSaleController.cs",
+              "RelativeToolTip": "Controllers\\RouteSaleController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAowCsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T04:41:17.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SearchOrderMobileFitlerModel.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\APIModels\\SaleOrder\\SearchOrderMobileFitlerModel.cs",
+              "RelativeDocumentMoniker": "..\\GM_DAL\\APIModels\\SaleOrder\\SearchOrderMobileFitlerModel.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\APIModels\\SaleOrder\\SearchOrderMobileFitlerModel.cs",
+              "RelativeToolTip": "..\\GM_DAL\\APIModels\\SaleOrder\\SearchOrderMobileFitlerModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBQAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T08:52:07.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\PlatFormAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\PlatFormAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T04:29:33.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SearchCustomerForSalerFilterModel.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\APIModels\\Customer\\SearchCustomerForSalerFilterModel.cs",
+              "RelativeDocumentMoniker": "..\\GM_DAL\\APIModels\\Customer\\SearchCustomerForSalerFilterModel.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\APIModels\\Customer\\SearchCustomerForSalerFilterModel.cs",
+              "RelativeToolTip": "..\\GM_DAL\\APIModels\\Customer\\SearchCustomerForSalerFilterModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T06:55:59.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SearchIOrderByCustomerFilterModel.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\APIModels\\SaleOrder\\SearchIOrderByCustomerFilterModel.cs",
+              "RelativeDocumentMoniker": "..\\GM_DAL\\APIModels\\SaleOrder\\SearchIOrderByCustomerFilterModel.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\APIModels\\SaleOrder\\SearchIOrderByCustomerFilterModel.cs",
+              "RelativeToolTip": "..\\GM_DAL\\APIModels\\SaleOrder\\SearchIOrderByCustomerFilterModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T09:02:26.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\PlatFormAPI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\PlatFormAPI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAYwBgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T16:32:08.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IRouteSaleService.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\IServices\\IRouteSaleService.cs",
+              "RelativeDocumentMoniker": "..\\GM_DAL\\IServices\\IRouteSaleService.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\IServices\\IRouteSaleService.cs",
+              "RelativeToolTip": "..\\GM_DAL\\IServices\\IRouteSaleService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAACJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T07:06:47.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\IServices\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "..\\GM_DAL\\IServices\\ICustomerService.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\IServices\\ICustomerService.cs",
+              "RelativeToolTip": "..\\GM_DAL\\IServices\\ICustomerService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:30:59.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SearchCustomerForSalerGridModel.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\APIModels\\Customer\\SearchCustomerForSalerGridModel.cs",
+              "RelativeDocumentMoniker": "..\\GM_DAL\\APIModels\\Customer\\SearchCustomerForSalerGridModel.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\APIModels\\Customer\\SearchCustomerForSalerGridModel.cs",
+              "RelativeToolTip": "..\\GM_DAL\\APIModels\\Customer\\SearchCustomerForSalerGridModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T06:54:34.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RouteSaleModel.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\Models\\RouteSale\\RouteSaleModel.cs",
+              "RelativeDocumentMoniker": "..\\GM_DAL\\Models\\RouteSale\\RouteSaleModel.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\Models\\RouteSale\\RouteSaleModel.cs",
+              "RelativeToolTip": "..\\GM_DAL\\Models\\RouteSale\\RouteSaleModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T06:56:56.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserInfoModel.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\Models\\User\\UserInfoModel.cs",
+              "RelativeDocumentMoniker": "..\\GM_DAL\\Models\\User\\UserInfoModel.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\Models\\User\\UserInfoModel.cs",
+              "RelativeToolTip": "..\\GM_DAL\\Models\\User\\UserInfoModel.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:45:57.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\PlatFormAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\PlatFormAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-13T03:50:56.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GMDbContext.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\GMDbContext.cs",
+              "RelativeDocumentMoniker": "..\\GM_DAL\\GMDbContext.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\GMDbContext.cs",
+              "RelativeToolTip": "..\\GM_DAL\\GMDbContext.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAYwCAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T10:14:05.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ResultCode.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\Enum\\ResultCode.cs",
+              "RelativeDocumentMoniker": "..\\GM_DAL\\Enum\\ResultCode.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\Enum\\ResultCode.cs",
+              "RelativeToolTip": "..\\GM_DAL\\Enum\\ResultCode.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T15:37:58.365Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
