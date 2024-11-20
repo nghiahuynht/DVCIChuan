@@ -1,0 +1,8 @@
+.vs/
+Bin/
+bin/
+obj/
+ErrorLogs/
+*.user
+Logs/
+gm-platform-bsx-aggregation-api/gm-platform-bsx-aggregation-api/Properties/PublishProfiles/FolderProfile.pubxml
