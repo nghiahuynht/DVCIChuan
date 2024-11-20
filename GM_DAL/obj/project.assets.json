@@ -2970,11 +2970,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\GM_DAL.csproj",
+      "projectUniqueName": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\GM_DAL.csproj",
       "projectName": "GM_DAL",
-      "projectPath": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\GM_DAL.csproj",
+      "projectPath": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\GM_DAL.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\OnGIT\\VeSinhMoiTruong\\GM_DAL\\obj\\",
+      "outputPath": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

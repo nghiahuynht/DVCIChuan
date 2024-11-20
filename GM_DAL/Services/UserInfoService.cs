@@ -46,5 +46,30 @@ namespace GM_DAL.Services
         }
 
 
+
+        public async Task<APIResultObject<List<MenuModel>>> GetMenuByRole(string role)
+        {
+            var res = new APIResultObject<List<MenuModel>>();
+            try
+            {
+                var param = new SqlParameter[] {
+                        new SqlParameter("@RoleCode",role),
+ 
+                };
+                ValidNullValue(param);
+                res.data = await db.Database.SqlQueryRaw<MenuModel>($"EXEC sp_GetMenuByRole @RoleCode", param).ToListAsync();
+                
+
+            }
+            catch (Exception ex)
+            {
+                res.message.exMessage = ex.Message;
+            }
+
+            return res;
+        }
+
+
+
     }
 }

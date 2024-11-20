@@ -11,5 +11,6 @@ namespace GM_DAL.IServices
     public interface IUserInfoService
     {
         APIResultObject<AuthenSuccessModel> Login(string userName, string pass);
+        Task<APIResultObject<List<MenuModel>>> GetMenuByRole(string role);
     }
 }

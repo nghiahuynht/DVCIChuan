@@ -10,3 +10,16 @@ F:\Projects\OnGIT\VeSinhMoiTruong\GM_DAL\obj\Debug\net8.0\GM_DAL.dll
 F:\Projects\OnGIT\VeSinhMoiTruong\GM_DAL\obj\Debug\net8.0\refint\GM_DAL.dll
 F:\Projects\OnGIT\VeSinhMoiTruong\GM_DAL\obj\Debug\net8.0\GM_DAL.pdb
 F:\Projects\OnGIT\VeSinhMoiTruong\GM_DAL\obj\Debug\net8.0\ref\GM_DAL.dll
+F:\Projects\OnGIT\DVCIChuan\GM_DAL\bin\Debug\net8.0\GM_DAL.deps.json
+F:\Projects\OnGIT\DVCIChuan\GM_DAL\bin\Debug\net8.0\GM_DAL.dll
+F:\Projects\OnGIT\DVCIChuan\GM_DAL\bin\Debug\net8.0\GM_DAL.pdb
+F:\Projects\OnGIT\DVCIChuan\GM_DAL\obj\Debug\net8.0\GM_DAL.csproj.AssemblyReference.cache
+F:\Projects\OnGIT\DVCIChuan\GM_DAL\obj\Debug\net8.0\GM_DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\OnGIT\DVCIChuan\GM_DAL\obj\Debug\net8.0\GM_DAL.AssemblyInfoInputs.cache
+F:\Projects\OnGIT\DVCIChuan\GM_DAL\obj\Debug\net8.0\GM_DAL.AssemblyInfo.cs
+F:\Projects\OnGIT\DVCIChuan\GM_DAL\obj\Debug\net8.0\GM_DAL.csproj.CoreCompileInputs.cache
+F:\Projects\OnGIT\DVCIChuan\GM_DAL\obj\Debug\net8.0\GM_DAL.sourcelink.json
+F:\Projects\OnGIT\DVCIChuan\GM_DAL\obj\Debug\net8.0\GM_DAL.dll
+F:\Projects\OnGIT\DVCIChuan\GM_DAL\obj\Debug\net8.0\refint\GM_DAL.dll
+F:\Projects\OnGIT\DVCIChuan\GM_DAL\obj\Debug\net8.0\GM_DAL.pdb
+F:\Projects\OnGIT\DVCIChuan\GM_DAL\obj\Debug\net8.0\ref\GM_DAL.dll
