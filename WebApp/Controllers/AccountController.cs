@@ -18,7 +18,7 @@ namespace WebApp.Controllers
         public IActionResult LoginPage(LoginModel model)
         {
             string failedAlert = string.Empty;
-            ClaimsIdentity identity = null;
+            ClaimsIdentity identity = new ClaimsIdentity() ;
             bool IsAuthenticated = false;
 
 
@@ -56,8 +56,6 @@ namespace WebApp.Controllers
             }
 
 
-
-
             ViewBag.LoginFail = failedAlert;
 
 
@@ -65,6 +63,17 @@ namespace WebApp.Controllers
 
             return View(model);
         }
+
+
+
+        public IActionResult Logout()
+        {
+            HttpContext.SignOutAsync();
+            return RedirectToAction("Login", "Account");
+        }
+
+
+
 
     }
 }
