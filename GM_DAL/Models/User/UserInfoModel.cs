@@ -9,10 +9,11 @@ namespace GM_DAL.Models.User
     public class UserInfoModel
     {
         public int id;
-        public string userName { get; set; }
+        public string code { get; set; }
+        public string loginName { get; set; }
         public string fullName { get; set; }
         public string email { get; set; }
-        public string pass { get; set; }
+        public string password { get; set; }
         public bool isActive { get; set; }
         public string phone { get; set; }
         public string title { get; set; }

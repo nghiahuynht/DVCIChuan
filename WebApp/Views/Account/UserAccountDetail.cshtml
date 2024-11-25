@@ -1,0 +1,99 @@
+﻿@model GM_DAL.Models.User.UserInfoModel
+
+@{
+    ViewData["Title"] = "Thông tin nhân viên/người dùng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">@(ViewData["Title"])</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">@(ViewData["Title"])</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<div class="content">
+    <div class="container-fluid">
+        <div class="card card-default">
+   
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-4">Mã người dùng</label>
+                            @Html.TextBoxFor(x => x.code, new { @class = "form-control col-sm-8" })
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4">Tên người dùng</label>
+                            @Html.TextBoxFor(x => x.fullName, new { @class = "form-control col-sm-8" })
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4">Điện thoại</label>
+                            @Html.TextBoxFor(x => x.phone, new { @class = "form-control col-sm-8" })
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4">Email</label>
+                            @Html.TextBoxFor(x => x.email, new { @class = "form-control col-sm-8" })
+                        </div>
+                        <!-- /.form-group -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-4">Vai trò</label>
+                            @Html.TextBoxFor(x => x.roleCode, new { @class = "form-control col-sm-8" })
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4">Chức danh</label>
+                            @Html.TextBoxFor(x => x.title, new { @class = "form-control col-sm-8" })
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4">Tên đăng nhập</label>
+                            @Html.TextBoxFor(x => x.loginName, new { @class = "form-control col-sm-8" })
+                        </div>
+                        <div class="form-group row">
+
+                            <div class="col-sm-4">
+
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="radio icheck-primary">
+                                    <input type="radio" id="primary1" name="primary" />
+                                    <label for="primary1">Hoạt động</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="radio icheck-primary">
+                                    <input type="radio" checked id="primary2" name="primary" />
+                                    <label for="primary2">Ngưng hoạt động</label>
+                                </div>
+                            </div>
+                          
+                           
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <!-- /.row -->
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer text-center">
+                <input type="button" class="btn btn-info" value="Lưu" />&nbsp;<input type="button" class="btn btn-info" value="Trở về danh sách" />
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -12,5 +12,7 @@ namespace GM_DAL.IServices
     {
         APIResultObject<AuthenSuccessModel> Login(string userName, string pass);
         Task<APIResultObject<List<MenuModel>>> GetMenuByRole(string role);
+        APIResultObject<ResCommon> SaveUserInfo(UserInfoModel model, string userName);
+        APIResultObject<UserInfoModel> GetUserById(int id);
     }
 }

@@ -3,11 +3,22 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using GM_DAL.IServices;
+using GM_DAL.Models;
 
 namespace WebApp.Controllers
 {
     public class AccountController : Controller
     {
+        private IUserInfoService _userInfoService;
+
+        public AccountController(IUserInfoService userInfoService)
+        {
+            _userInfoService = userInfoService;
+        }
+
+
+
         public IActionResult LoginPage()
         {
             var model = new LoginModel();
@@ -71,6 +82,24 @@ namespace WebApp.Controllers
             HttpContext.SignOutAsync();
             return RedirectToAction("Login", "Account");
         }
+
+
+
+        public IActionResult SearchUserAccount()
+        {
+            return View();
+        }
+
+        public IActionResult UserAccountDetail(int? id)
+        {
+            var user = new UserInfoModel();
+            if (id.HasValue && id.Value != 0)
+            {
+                user = _userInfoService.GetUserById(id.Value).data;
+            }
+            return View(user);
+        }
+
 
 
 

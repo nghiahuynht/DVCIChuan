@@ -17,8 +17,19 @@ namespace WebApp.Controllers
         public IActionResult Index()
         {
             var userinfo = AuthInfo();
+            if (string.IsNullOrEmpty(userinfo.userName))
+            {
+                return RedirectToAction("LoginPage", "Account");
+            }
             return View();
         }
+
+
+
+
+
+
+
 
       
     }

@@ -18,7 +18,7 @@ namespace GM_DAL.Models
         }
 
        
-        public T data { get; set; }
+        public T? data { get; set; }
         public APIMessageResponse message { get; set; }
 
     }
