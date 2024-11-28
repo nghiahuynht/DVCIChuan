@@ -72,7 +72,7 @@
               "RelativeDocumentMoniker": "..\\WebApp\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "..\\WebApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAABUAAABnAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAIBMwBUAAABnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-25T09:40:40.229Z",
               "EditorCaption": ""
@@ -98,7 +98,7 @@
               "RelativeDocumentMoniker": "..\\WebApp\\Views\\Account\\UserAccountDetail.cshtml",
               "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\Views\\Account\\UserAccountDetail.cshtml",
               "RelativeToolTip": "..\\WebApp\\Views\\Account\\UserAccountDetail.cshtml",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAQwFAAAAAmAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABoAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-25T07:51:44.997Z",
               "EditorCaption": ""
@@ -124,9 +124,10 @@
               "RelativeDocumentMoniker": "..\\WebApp\\Program.cs",
               "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\Program.cs",
               "RelativeToolTip": "..\\WebApp\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBMwA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T10:36:58.681Z"
+              "WhenOpened": "2024-11-20T10:36:58.681Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -164,7 +165,8 @@
               "RelativeToolTip": "..\\GM_DAL\\GMDbContext.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAowCQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T14:56:47.577Z"
+              "WhenOpened": "2024-11-21T14:56:47.577Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -215,7 +217,8 @@
               "RelativeToolTip": "..\\GM_DAL\\Models\\MenuModel.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAIAywA0AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T17:17:44.993Z"
+              "WhenOpened": "2024-11-21T17:17:44.993Z",
+              "EditorCaption": ""
             }
           ]
         }
