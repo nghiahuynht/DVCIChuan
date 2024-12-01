@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace GM_DAL.Models
 {
-    public class ResCommon
+    public class ComboboxModel
     {
-        public decimal value { get; set; }
-        public string? message { get; set; }
-        public string? error { get; set; }
+        public string? value { get; set; }
+        public string? text { get; set; }
     }
 }

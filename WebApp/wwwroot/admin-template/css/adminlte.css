@@ -31289,3 +31289,10 @@ a.text-muted:hover {
   color: #fff;
 }
 /*# sourceMappingURL=adminlte.css.map */
+
+.error{
+    border:1px solid #dc3545;
+}
+.btn-filter {
+    margin-top: 39px;
+}

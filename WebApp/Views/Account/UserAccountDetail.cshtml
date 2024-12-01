@@ -4,6 +4,11 @@
     ViewData["Title"] = "Thông tin nhân viên/người dùng";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@section styles{
+    <style>
+       
+    </style>
+}
 
 <!-- Content Header (Page header) -->
 <div class="content-header">
@@ -28,72 +33,161 @@
         <div class="card card-default">
    
             <div class="card-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group row">
-                            <label class="col-sm-4">Mã người dùng</label>
-                            @Html.TextBoxFor(x => x.code, new { @class = "form-control col-sm-8" })
-
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-sm-4">Tên người dùng</label>
-                            @Html.TextBoxFor(x => x.fullName, new { @class = "form-control col-sm-8" })
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-sm-4">Điện thoại</label>
-                            @Html.TextBoxFor(x => x.phone, new { @class = "form-control col-sm-8" })
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-sm-4">Email</label>
-                            @Html.TextBoxFor(x => x.email, new { @class = "form-control col-sm-8" })
-                        </div>
-                        <!-- /.form-group -->
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-md-6">
-                        <div class="form-group row">
-                            <label class="col-sm-4">Vai trò</label>
-                            @Html.TextBoxFor(x => x.roleCode, new { @class = "form-control col-sm-8" })
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-sm-4">Chức danh</label>
-                            @Html.TextBoxFor(x => x.title, new { @class = "form-control col-sm-8" })
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-sm-4">Tên đăng nhập</label>
-                            @Html.TextBoxFor(x => x.loginName, new { @class = "form-control col-sm-8" })
-                        </div>
-                        <div class="form-group row">
-
-                            <div class="col-sm-4">
+                <form class="form-horizontal" id="form-useraccount">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-4">Mã người dùng</label>
+                                @Html.TextBoxFor(x => x.code, new { @class = "form-control col-sm-8" })
 
                             </div>
-                            <div class="col-sm-4">
-                                <div class="radio icheck-primary">
-                                    <input type="radio" id="primary1" name="primary" />
-                                    <label for="primary1">Hoạt động</label>
+                            <div class="form-group row">
+                                <label class="col-sm-4">Tên người dùng</label>
+                                @Html.TextBoxFor(x => x.fullName, new { @class = "form-control col-sm-8" })
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4">Điện thoại</label>
+                                @Html.TextBoxFor(x => x.phone, new { @class = "form-control col-sm-8" })
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4">Email</label>
+                                @Html.TextBoxFor(x => x.email, new { @class = "form-control col-sm-8" })
+                            </div>
+                            <!-- /.form-group -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-4">Vai trò</label>
+                                <select class="form-control col-sm-8" id="roleCode" name="roleCode">
+                                    @{
+                                        var lstRoles = (List<GM_DAL.Models.ComboboxModel>)ViewBag.RoleCodes;
+                                        foreach (var role in lstRoles)
+                                        {
+                                            if (Model.roleCode == role.value)
+                                            {
+                                                            <option value="@(role.value)">@(role.text)</option>
+                                            }
+                                            else
+                                            {
+                                                            <option value="@(role.value)">@(role.text)</option>
+                                            }
+
+
+                                        }
+                                    }
+                                </select>
+                                
+
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4">Chức danh</label>
+                                @Html.TextBoxFor(x => x.title, new { @class = "form-control col-sm-8" })
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-4">Tên đăng nhập</label>
+                                @Html.TextBoxFor(x => x.loginName, new { @class = "form-control col-sm-8" })
+                            </div>
+                            <div class="form-group row">
+
+                                <div class="col-sm-4">
                                 </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="radio icheck-primary">
-                                    <input type="radio" checked id="primary2" name="primary" />
-                                    <label for="primary2">Ngưng hoạt động</label>
+                                <div class="col-sm-4">
+                                    <input type="radio" id="ra-active" name="isActive" checked="checked" />&nbsp; Hoạt động
+
                                 </div>
+                                <div class="col-sm-4">
+                                    <input type="radio" id="ra-inactive" name="isActive" />&nbsp;Ngưng hoạt động
+                                </div>
+
+
                             </div>
-                          
-                           
                         </div>
+                        <!-- /.col -->
                     </div>
-                    <!-- /.col -->
-                </div>
-                <!-- /.row -->
+                </form>
+                
                 <!-- /.row -->
             </div>
             <!-- /.card-body -->
             <div class="card-footer text-center">
-                <input type="button" class="btn btn-info" value="Lưu" />&nbsp;<input type="button" class="btn btn-info" value="Trở về danh sách" />
+                <input type="button" class="btn btn-info" id="btn-save" value="Lưu" />&nbsp;<input type="button" class="btn btn-info" value="Trở về danh sách" />
             </div>
         </div>
     </div>
 </div>
 
+
+
+@section scripts {
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn-save").click(function () {
+                saveUser();
+            });
+
+        })
+
+        function validDateSave() {
+            var resutlValid = $("#form-useraccount").validate({
+                rules: {
+                    "code": "required",
+                    "fullname": "required",
+                },
+                messages: {
+                    "code": null,
+                    "fullname": null,
+                }
+            }).form();
+            return resutlValid;
+        }
+
+        function saveUser() {
+            ShowWaiting();
+            let validSave = validDateSave();
+            if (validSave) {
+                var dataSave = FormToObject("#form-useraccount", null);
+
+                
+                const radios = Array.from($(`[name=isActive`));
+                const checkedRadio = radios.filter(e => e.checked)[0];
+
+                dataSave.isActive = (checkedRadio.id == "ra-active")?true:false;
+               
+                $.ajax({
+                    type: "POST",
+                    contentType: 'application/json; charset=utf-8',
+                    url: "/Account/SaveUserDetail",
+                    dataType: 'json',
+                    data: JSON.stringify(dataSave),
+                    beforeSend: function () {
+                       ShowWaiting();
+                    },
+                    success: function (res) 
+                    {
+                        debugger;
+                        HideWaiting();
+                        if (res.valueInt > 0) 
+                        {
+                            location.href = "/account/UserAccountDetail" + res.valueInt;
+                        }
+
+                       
+                        $('.toast').toast('show');
+
+                    }
+                });
+
+
+
+            }
+        }
+
+
+   
+
+
+    </script>
+}

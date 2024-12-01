@@ -8,6 +8,11 @@ namespace GM_DAL.Models.User
 {
     public class UserInfoModel
     {
+        public UserInfoModel()
+        {
+            isActive = true;
+        }
+
         public int id;
         public string code { get; set; }
         public string loginName { get; set; }

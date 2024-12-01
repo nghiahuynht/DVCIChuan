@@ -19,11 +19,43 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
     <link href="~/admin-template/fonts/fontawesome-free/css/all.min.css" rel="stylesheet" />
-    <link href="~/admin-template/plugins/icheck-bootstrap/icheck-bootstrap.min.css" rel="stylesheet" />
-    <link href="~/admin-template/css/adminlte.css" rel="stylesheet" />
+   
 
+    <link href="~/admin-template/css/adminlte.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/admin-template/plugins/toastr/toastr.min.css" rel="stylesheet" />
+    @RenderSection("styles", required: false)
+    <style>
+        #popup-overlay {
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.685);
+            width: 100%;
+            height: 95vh;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+            display: block;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            display: none;
+        }
+
+        #content-wating {
+            margin-top: 20%;
+        }
+    </style>
 </head>
 <body class="hold-transition sidebar-mini">
+    <div class="toast align-items-center hide position-relative bd-example-toasts" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+   
+
     <div class="wrapper">
 
         <!-- Navbar -->
@@ -159,14 +191,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-            <div class="p-3">
-                <h5>Title</h5>
-                <p>Sidebar content</p>
-            </div>
-        </aside>
+       
         <!-- /.control-sidebar -->
         <!-- Main Footer -->
         <footer class="main-footer">
@@ -181,11 +206,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- ./wrapper -->
     <!-- REQUIRED SCRIPTS -->
     <!-- jQuery -->
+    <div id="popup-overlay">
+        <div class="text-center" id="content-wating">
+            <div class="spinner-border text-warning" role="status" style="width: 3rem; height: 3rem;">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+   
 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script src="~/admin-template/jquery/adminlte.js"></script>
+    <script src="~/admin-template/jquery/helper.js"></script>
+    <script src="~/admin-template/plugins/toastr/toastr.min.js"></script>
     <script>
         $(document).ready(function () { 
             $("#top-right-menu-profile").click(function () {
@@ -202,7 +238,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             });
         })
     </script>
-  
+    @RenderSection("scripts", required: false)
 
 </body>
 </html>

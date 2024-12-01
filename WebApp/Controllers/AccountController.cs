@@ -8,7 +8,7 @@ using GM_DAL.Models;
 
 namespace WebApp.Controllers
 {
-    public class AccountController : Controller
+    public class AccountController : AppBaseController
     {
         private IUserInfoService _userInfoService;
 
@@ -97,11 +97,23 @@ namespace WebApp.Controllers
             {
                 user = _userInfoService.GetUserById(id.Value).data;
             }
+
+            ViewBag.RoleCodes = new List<ComboboxModel>
+            {
+                new ComboboxModel{value="Admin",text="Quản trị"},
+                new ComboboxModel{value="Manager",text="Quản lý"},
+                new ComboboxModel{value="Accountant",text="Kế toán"}
+            };
+
             return View(user);
         }
 
-
-
+        [HttpPost]
+        public JsonResult SaveUserDetail([FromBody] UserInfoModel model)
+        {
+            var res = _userInfoService.SaveUserInfo(model, AuthInfo().userName);
+            return Json(res);
+        }
 
 
     }

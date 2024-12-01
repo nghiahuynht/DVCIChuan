@@ -2,7 +2,10 @@
     ViewData["Title"] = "Danh sách nhân viên/người dùng";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@section styles{
+    <link href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css" rel="stylesheet" />
 
+}
 <!-- Content Header (Page header) -->
 <div class="content-header">
     <div class="container-fluid">
@@ -23,7 +26,52 @@
 <!-- Main content -->
 <div class="content">
     <div class="container-fluid">
-        <p>Nội dung trang ở đây</p>
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <p>Vai trò</p>
+                        <select class="form-control">
+                            <option value="All">Tất cả</option>
+                            <option value="Admin">Quản trị</option>
+                            <option value="Manager">Quản lý</option>
+                            <option value="Accountant">Kế toán</option>
+                            <option value="Sale">NV thu tiền</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Từ khoá</p>
+                        <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-sm-1">
+                        <button class="btn btn-primary btn-filter"><i class="fa fa-search"></i></button>
+                    </div>
+                    <div class="col-sm-3 text-right">
+                        <input type="button" value="Export" class="btn btn-success btn-filter" />&nbsp;
+                        <input type="button" value="Import" class="btn btn-success btn-filter" />
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered table-hover dataTable">
+                <thead>
+                    <tr>
+                        <th>Mã người dùng</th>
+                        <th>Tên người dùng</th>
+                        <th>Điện thoại</th>
+                        <th>Email</th>
+                        <th>Vai trò</th>
+                        <th>Chức danh</th>
+                        <th>Tên đăng nhập</th>
+                        <th>Trạng thái</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        
     </div>
 </div>
 
+@section scripts{
+
+}

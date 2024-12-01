@@ -80,14 +80,17 @@ namespace GM_DAL.Services
                         new SqlParameter("@Id",model.id),
                         new SqlParameter("@Code",model.code),
                         new SqlParameter("@LoginName",model.loginName),
+                        new SqlParameter("@FullName",model.fullName),
                         new SqlParameter("@Phone",model.phone),
                         new SqlParameter("@Email",model.email),
                         new SqlParameter("@Title",model.title),
                         new SqlParameter("@RoleCode",model.roleCode),
                         new SqlParameter("@IsActive",model.isActive),
+                        new SqlParameter("@UserName",userName),
+                       
                 };
                 ValidNullValue(param);
-                var resExcute = db.Database.SqlQueryRaw<ResCommon>($"EXEC sp_SaveUserInfo @Id,@Code,@LoginName,@Phone,@Email,@Title,@RoleCode,@IsActive", param).ToList();
+                var resExcute = db.Database.SqlQueryRaw<ResCommon>($"EXEC sp_SaveUserInfo @Id,@Code,@LoginName,@FullName,@Phone,@Email,@Title,@RoleCode,@IsActive,@UserName", param).ToList();
                 if (resExcute != null && resExcute.Any())
                 {
                     res.data = resExcute.FirstOrDefault();
