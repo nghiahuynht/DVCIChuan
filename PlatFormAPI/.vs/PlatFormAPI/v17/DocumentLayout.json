@@ -3,25 +3,31 @@
   "WorkspaceRootPath": "F:\\Projects\\OnGIT\\DVCIChuan\\PlatFormAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A4B06EB-646D-49E4-BDCA-7DD9A4DCBCA2}|..\\WebApp\\WebApp.csproj|f:\\projects\\ongit\\dvcichuan\\webapp\\views\\account\\searchuseraccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\dvcichuan\\gm_dal\\services\\userinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4B06EB-646D-49E4-BDCA-7DD9A4DCBCA2}|..\\WebApp\\WebApp.csproj|f:\\projects\\ongit\\dvcichuan\\webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A4B06EB-646D-49E4-BDCA-7DD9A4DCBCA2}|..\\WebApp\\WebApp.csproj|f:\\projects\\ongit\\dvcichuan\\webapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\dvcichuan\\gm_dal\\services\\userinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A4B06EB-646D-49E4-BDCA-7DD9A4DCBCA2}|..\\WebApp\\WebApp.csproj|f:\\projects\\ongit\\dvcichuan\\webapp\\views\\account\\searchuseraccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4B06EB-646D-49E4-BDCA-7DD9A4DCBCA2}|..\\WebApp\\WebApp.csproj|f:\\projects\\ongit\\dvcichuan\\webapp\\wwwroot\\admin-template\\css\\adminlte.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\dvcichuan\\gm_dal\\models\\datatabledefaultparammodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\dvcichuan\\gm_dal\\models\\user\\searchuserfiltermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A4B06EB-646D-49E4-BDCA-7DD9A4DCBCA2}|..\\WebApp\\WebApp.csproj|f:\\projects\\ongit\\dvcichuan\\webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\dvcichuan\\gm_dal\\models\\user\\userinfomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8A4B06EB-646D-49E4-BDCA-7DD9A4DCBCA2}|..\\WebApp\\WebApp.csproj|f:\\projects\\ongit\\dvcichuan\\webapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\dvcichuan\\gm_dal\\iservices\\iuserinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A4B06EB-646D-49E4-BDCA-7DD9A4DCBCA2}|..\\WebApp\\WebApp.csproj|f:\\projects\\ongit\\dvcichuan\\webapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
@@ -40,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -60,33 +66,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\WebApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\WebApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABcAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T09:57:17.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "adminlte.css",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\wwwroot\\admin-template\\css\\adminlte.css",
+              "RelativeDocumentMoniker": "..\\WebApp\\wwwroot\\admin-template\\css\\adminlte.css",
+              "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\wwwroot\\admin-template\\css\\adminlte.css",
+              "RelativeToolTip": "..\\WebApp\\wwwroot\\admin-template\\css\\adminlte.css",
+              "ViewState": "AQIAADV6AAAAAAAAAAAAAER6AAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-01T09:11:14.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataTableDefaultParamModel.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Models\\DataTableDefaultParamModel.cs",
+              "RelativeDocumentMoniker": "..\\GM_DAL\\Models\\DataTableDefaultParamModel.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Models\\DataTableDefaultParamModel.cs",
+              "RelativeToolTip": "..\\GM_DAL\\Models\\DataTableDefaultParamModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T08:22:26.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SearchUserFilterModel.cs",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Models\\User\\SearchUserFilterModel.cs",
+              "RelativeDocumentMoniker": "..\\GM_DAL\\Models\\User\\SearchUserFilterModel.cs",
+              "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Models\\User\\SearchUserFilterModel.cs",
+              "RelativeToolTip": "..\\GM_DAL\\Models\\User\\SearchUserFilterModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T08:21:31.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "UserInfoService.cs",
               "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Services\\UserInfoService.cs",
               "RelativeDocumentMoniker": "..\\GM_DAL\\Services\\UserInfoService.cs",
               "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Services\\UserInfoService.cs",
               "RelativeToolTip": "..\\GM_DAL\\Services\\UserInfoService.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAkwFwAAAA/AAAA",
+              "ViewState": "AQIAAIsAAAAAAAAAAAAtwHMAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T16:59:50.614Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AccountController.cs",
               "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "..\\WebApp\\Controllers\\AccountController.cs",
               "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\Controllers\\AccountController.cs",
               "RelativeToolTip": "..\\WebApp\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAMwFgAAAAJAAAA",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAUwGEAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T10:24:55.216Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "SearchUserAccount.cshtml",
+              "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\Views\\Account\\SearchUserAccount.cshtml",
+              "RelativeDocumentMoniker": "..\\WebApp\\Views\\Account\\SearchUserAccount.cshtml",
+              "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\Views\\Account\\SearchUserAccount.cshtml",
+              "RelativeToolTip": "..\\WebApp\\Views\\Account\\SearchUserAccount.cshtml",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAGMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T07:48:47.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "HomeController.cs",
               "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "..\\WebApp\\Controllers\\HomeController.cs",
@@ -98,32 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SearchUserAccount.cshtml",
-              "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\Views\\Account\\SearchUserAccount.cshtml",
-              "RelativeDocumentMoniker": "..\\WebApp\\Views\\Account\\SearchUserAccount.cshtml",
-              "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\Views\\Account\\SearchUserAccount.cshtml",
-              "RelativeToolTip": "..\\WebApp\\Views\\Account\\SearchUserAccount.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-25T07:48:47.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IUserInfoService.cs",
-              "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\IServices\\IUserInfoService.cs",
-              "RelativeDocumentMoniker": "..\\GM_DAL\\IServices\\IUserInfoService.cs",
-              "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\IServices\\IUserInfoService.cs",
-              "RelativeToolTip": "..\\GM_DAL\\IServices\\IUserInfoService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T16:59:53.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\Program.cs",
               "RelativeDocumentMoniker": "..\\WebApp\\Program.cs",
@@ -135,19 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserInfoModel.cs",
-              "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Models\\User\\UserInfoModel.cs",
-              "RelativeDocumentMoniker": "..\\GM_DAL\\Models\\User\\UserInfoModel.cs",
-              "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Models\\User\\UserInfoModel.cs",
-              "RelativeToolTip": "..\\GM_DAL\\Models\\User\\UserInfoModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T09:15:20.076Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "GMDbContext.cs",
               "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\GMDbContext.cs",
               "RelativeDocumentMoniker": "..\\GM_DAL\\GMDbContext.cs",
@@ -159,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\WebApp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "..\\WebApp\\Views\\Home\\Index.cshtml",
@@ -171,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "MenuModel.cs",
               "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Models\\MenuModel.cs",
               "RelativeDocumentMoniker": "..\\GM_DAL\\Models\\MenuModel.cs",

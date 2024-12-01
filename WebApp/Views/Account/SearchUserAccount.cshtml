@@ -31,7 +31,7 @@
                 <div class="row">
                     <div class="col-sm-2">
                         <p>Vai trò</p>
-                        <select class="form-control">
+                        <select class="form-control" id="ddl-role">
                             <option value="All">Tất cả</option>
                             <option value="Admin">Quản trị</option>
                             <option value="Manager">Quản lý</option>
@@ -39,12 +39,20 @@
                             <option value="Sale">NV thu tiền</option>
                         </select>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-2">
+                        <p>Trạng thái</p>
+                        <select class="form-control" id="ddl-status">
+                            <option value="Active">Đang hoạt động</option>
+                            <option value="InActive">Ngưng hoạt động</option>
+                            <option value="All">Tất cả</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4">
                         <p>Từ khoá</p>
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" id="txtkeyword" />
                     </div>
                     <div class="col-sm-1">
-                        <button class="btn btn-primary btn-filter"><i class="fa fa-search"></i></button>
+                        <button id="btn-search" class="btn btn-primary btn-filter"><i class="fa fa-search"></i></button>
                     </div>
                     <div class="col-sm-3 text-right">
                         <input type="button" value="Export" class="btn btn-success btn-filter" />&nbsp;
@@ -52,9 +60,10 @@
                     </div>
                 </div>
             </div>
-            <table class="table table-bordered table-hover dataTable">
+            <table id="table-userinfo" class="table table-bordered table-striped">
                 <thead>
                     <tr>
+                        <th></th>
                         <th>Mã người dùng</th>
                         <th>Tên người dùng</th>
                         <th>Điện thoại</th>
@@ -63,7 +72,6 @@
                         <th>Chức danh</th>
                         <th>Tên đăng nhập</th>
                         <th>Trạng thái</th>
-                        <th></th>
                     </tr>
                 </thead>
             </table>
@@ -73,5 +81,84 @@
 </div>
 
 @section scripts{
+    <script src="~/admin-template/plugins/datatable-bootstrap5/datatables.min.js"></script>
 
+
+
+
+
+    <script>
+
+
+        var tableId = "#table-userinfo";
+        var ajaxURL = "/Account/SearchUserInfoAction";
+        var columnData = [
+            {
+                "data": "id", "render": function (data, type, row, meta) {
+                    return RenderTableAction(data);
+                }
+            },
+            {
+                "data": "code", "render": function (data, type, row, meta) {
+                    return RenderUserCode(data);
+                }
+            },
+            { "data": "fullName" },
+            { "data": "phone" },
+            { "data": "email" },
+            { "data": "roleCode" },
+            { "data": "title" },
+            { "data": "loginName" },
+            {
+                "data": "isActive", "render": function (data, type, row, meta) {
+                    return RenderActiveDesc(data);
+                }
+            },
+
+
+        ];
+
+
+        $(document).ready(function () {
+
+
+            SearchUserInfo();
+            $("#btn-search").click(function () {
+                SearchUserInfo();
+            });
+
+        });
+
+
+        function RenderTableAction(userId) {
+            debugger;
+            var html = "<div class='div-table-action'><i class='fa fa-edit' onclick='GotoUserDetail(" + userId + ")'></i></div>";
+            return html;
+        }
+        function RenderActiveDesc(isActive) {
+            if (isActive) {
+                return "Hoạt động";
+            } else if (!isActive) {
+                return "Ngưng hoạt động";
+            } else { 
+                return "N/A";
+            }
+        }
+        function RenderUserCode(userCode) {
+            return "<i class='fa fa-user'></i>&nbsp;" + userCode
+        }
+        function SearchUserInfo() {
+
+            var dataSearch = {
+                roleCode: $("#ddl-role").val(),
+                status: $("#ddl-status").val(),
+                yeyword: $("#txtkeyword").val()
+            };
+            GenrateDataTableSearch(tableId, ajaxURL, columnData, dataSearch);
+
+        }
+        function GotoUserDetail(userId) {
+            location.href = "/account/UserAccountDetail/" + userId;
+        }
+    </script>
 }

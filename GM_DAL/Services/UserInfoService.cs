@@ -114,10 +114,10 @@ namespace GM_DAL.Services
             try
             {
                 var param = new SqlParameter[] {
-                        new SqlParameter("@Id",id),
+                        new SqlParameter("@UserId",id),
                 };
                 ValidNullValue(param);
-                var resExcute = db.Database.SqlQueryRaw<UserInfoModel>($"EXEC sp_GetUserInfoByUd @Id", param).ToList();
+                var resExcute = db.Database.SqlQueryRaw<UserInfoModel>($"EXEC sp_GetUserInfoById @UserId", param).ToList();
                 if (resExcute != null && resExcute.Any())
                 {
                     res.data = resExcute.FirstOrDefault();
@@ -133,7 +133,33 @@ namespace GM_DAL.Services
             return res;
         }
 
+        public async Task<DataTableResultModel<UserInfoModel>> SearchUserAccount(SearchUserFilterModel filter)
+        {
+            var res = new DataTableResultModel<UserInfoModel>();
+            try
+            {
+                var param = new SqlParameter[] {
+                        new SqlParameter("@RoleCode",filter.roleCode),
+                        new SqlParameter("@Status",filter.status),
+                        new SqlParameter("@Keyword", filter.keyword),
+                        new SqlParameter("@Start", filter.start),
+                        new SqlParameter("@Length", filter.length),
+                        new SqlParameter { ParameterName = "@TotalRow", DbType = System.Data.DbType.Int16, Direction = System.Data.ParameterDirection.Output }
+                };
+                ValidNullValue(param);
+                res.data = await db.Database.SqlQueryRaw<UserInfoModel>($"EXEC sp_SearchUserInfo @RoleCode,@Status,@Keyword,@Start,@Length,@TotalRow OUT", param).ToListAsync();
+                res.recordsTotal = Convert.ToInt16(param[param.Length - 1].Value);
+                res.recordsFiltered = res.recordsTotal;
 
+            }
+            catch (Exception ex)
+            {
+                res.data = new List<UserInfoModel>();
+            }
+
+
+            return res;
+        }
 
     }
 }

@@ -31296,3 +31296,14 @@ a.text-muted:hover {
 .btn-filter {
     margin-top: 39px;
 }
+
+.cell-border > tr th{
+    border:1px solid #ccc;
+}
+
+/*.text-right{
+    text-align:right;
+}
+.text-center {
+    text-align: center;
+}*/

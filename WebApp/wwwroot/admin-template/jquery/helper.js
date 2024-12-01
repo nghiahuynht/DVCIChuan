@@ -1,5 +1,4 @@
-﻿function GenrateDataTableSearch(tableId, URL, columnsData, searchParams)
-{
+﻿function GenrateDataTableSearch(tableId, URL, columnsData, searchParams) {
     $(tableId).DataTable({
         "processing": true,
         "serverSide": true,
@@ -11,6 +10,7 @@
         "scrollY": "400px",
         "scrollX": true,
         "scrollCollapse": true,
+        "fixedHeader": true,
         //"fixedColumns": {
         //    leftColumns: 4,
         //    rightColumns: 1

@@ -115,6 +115,17 @@ namespace WebApp.Controllers
             return Json(res);
         }
 
+        [HttpPost]
+        // [Authorize(Roles = "Admin")]
+        public async Task<DataTableResultModel<UserInfoModel>> SearchUserInfoAction(SearchUserFilterModel filter)
+        {
+            var res = await _userInfoService.SearchUserAccount(filter);
+            return res;
+        }
+
+
+
+
 
     }
 }

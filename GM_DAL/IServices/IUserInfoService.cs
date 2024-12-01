@@ -14,5 +14,6 @@ namespace GM_DAL.IServices
         Task<APIResultObject<List<MenuModel>>> GetMenuByRole(string role);
         APIResultObject<ResCommon> SaveUserInfo(UserInfoModel model, string userName);
         APIResultObject<UserInfoModel> GetUserById(int id);
+        Task<DataTableResultModel<UserInfoModel>> SearchUserAccount(SearchUserFilterModel filter);
     }
 }

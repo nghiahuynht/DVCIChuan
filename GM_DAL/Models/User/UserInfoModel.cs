@@ -13,7 +13,7 @@ namespace GM_DAL.Models.User
             isActive = true;
         }
 
-        public int id;
+        public int id { get; set; }
         public string code { get; set; }
         public string loginName { get; set; }
         public string fullName { get; set; }
