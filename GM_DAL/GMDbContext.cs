@@ -10,6 +10,7 @@ using GM_DAL.Models.User;
 using GM_DAL.IServices;
 using GM_DAL.Services;
 using System.Reflection.Emit;
+using GM_DAL.Models.CaptionTeam;
 
 namespace GM_DAL
 {
@@ -25,11 +26,11 @@ namespace GM_DAL
             _configtion = configtion;
         }
 
-       // public DbSet<AuthenSuccessModel> AuthenSuccessModel { get; set; }
+       // public DbSet<CaptionTeamModel> CaptionTeamModel { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            //builder.Entity<AuthenSuccessModel>().HasKey(o => o.userName);
+           // builder.Entity<CaptionTeamModel>().HasKey(o => o.id);
             base.OnModelCreating(builder);
 
         }

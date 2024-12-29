@@ -1,4 +1,5 @@
-﻿using GM_DAL.IServices;
+﻿using Dapper;
+using GM_DAL.IServices;
 using GM_DAL.Models;
 using GM_DAL.Models.CaptionTeam;
 using GM_DAL.Models.Customer;
@@ -6,6 +7,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,9 +17,11 @@ namespace GM_DAL.Services
     public class CustomerService:BaseService, ICustomerService
     {
         private GMDbContext db;
-        public CustomerService(GMDbContext db)
+        private SQLAdoContext adoContext;
+        public CustomerService(GMDbContext db, SQLAdoContext adoContext)
         {
             this.db = db;
+            this.adoContext = adoContext;
         }
 
 
@@ -26,14 +30,13 @@ namespace GM_DAL.Services
             var res = new APIResultObject<CustomerModel>();
             try
             {
-                var param = new SqlParameter[] {
-                        new SqlParameter("@CustomerId",id),
-                };
-                ValidNullValue(param);
-                var dataExutte = await db.Database.SqlQueryRaw<CustomerModel>($"EXEC sp_GetCustomerById @CustomerId", param).ToListAsync();
-                if (dataExutte != null && dataExutte.Any())
+               
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@CustomerId", CommonHelper.CheckIntNull(id));
+                using (var connection = adoContext.CreateConnection())
                 {
-                    res.data = dataExutte.FirstOrDefault();
+                    var resultExcute = await connection.QueryAsync<CustomerModel>("sp_GetConnectInfoByComCode", parameters, commandType: CommandType.StoredProcedure);
+                    res.data = resultExcute.FirstOrDefault();
                 }
             }
             catch (Exception ex)

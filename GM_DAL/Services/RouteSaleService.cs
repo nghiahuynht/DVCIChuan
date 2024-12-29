@@ -12,15 +12,19 @@ using GM_DAL.Models.RouteSale;
 using GM_DAL.APIModels;
 using GM_DAL.APIModels.Customer;
 using System.Data;
+using Dapper;
+using GM_DAL.Models.Customer;
 
 namespace GM_DAL.Services
 {
     public class RouteSaleService:BaseService, IRouteSaleService
     {
         private GMDbContext db;
-        public RouteSaleService(GMDbContext db)
+        private SQLAdoContext adoContext;
+        public RouteSaleService(GMDbContext db, SQLAdoContext adoContext)
         {
             this.db = db;
+            this.adoContext = adoContext;
         }
 
 
@@ -34,6 +38,16 @@ namespace GM_DAL.Services
                 };
                 ValidNullValue(param);
                 res.data = await db.Database.SqlQueryRaw<RouteSaleModel>($"EXEC sp_GetRouteByTeamCode @TeamCode", param).ToListAsync();
+
+
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@CustomerId", CommonHelper.CheckIntNull(id));
+                using (var connection = adoContext.CreateConnection())
+                {
+                    var resultExcute = await connection.QueryAsync<CustomerModel>("sp_GetConnectInfoByComCode", parameters, commandType: CommandType.StoredProcedure);
+                    res.data = resultExcute.FirstOrDefault();
+                }
+
 
             }
             catch (Exception ex)

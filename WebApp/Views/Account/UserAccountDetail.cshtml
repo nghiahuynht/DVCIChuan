@@ -145,15 +145,13 @@
         }
 
         function saveUser() {
+
             ShowWaiting();
             let validSave = validDateSave();
             if (validSave) {
                 var dataSave = FormToObject("#form-useraccount", null);
-
-                
                 const radios = Array.from($(`[name=isActive`));
                 const checkedRadio = radios.filter(e => e.checked)[0];
-
                 dataSave.isActive = (checkedRadio.id == "ra-active")?true:false;
                
                 $.ajax({
@@ -167,15 +165,17 @@
                     },
                     success: function (res) 
                     {
+                        
                         debugger;
                         HideWaiting();
                         if (res.valueInt > 0) 
                         {
+                            $('.toast').toast('show');
                             location.href = "/account/UserAccountDetail" + res.valueInt;
                         }
 
                        
-                        $('.toast').toast('show');
+                        
 
                     }
                 });
