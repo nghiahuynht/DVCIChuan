@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "pn+7o6Px/apLZQeaVuBJPIad3fXhljsOYBnZlLmK6g4=",
+  "Hash": "fzZRpExn3zlooJ/N3g3JTj5wqD80u5V+sPiFkSNHHv0=",
   "Source": "PlatFormAPI",
   "BasePath": "_content/PlatFormAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

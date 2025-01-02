@@ -90,12 +90,12 @@ namespace WebApp.Controllers
             return View();
         }
 
-        public IActionResult UserAccountDetail(int? id)
+        public async Task<IActionResult> UserAccountDetail(int? id)
         {
-            var user = new UserInfoModel();
+            var user =new APIResultObject<UserInfoModel>() ;
             if (id.HasValue && id.Value != 0)
             {
-                user = _userInfoService.GetUserById(id.Value).data;
+                user = await _userInfoService.GetUserById(id.Value);
             }
 
             ViewBag.RoleCodes = new List<ComboboxModel>
@@ -105,7 +105,7 @@ namespace WebApp.Controllers
                 new ComboboxModel{value="Accountant",text="Kế toán"}
             };
 
-            return View(user);
+            return View(user.data);
         }
 
         [HttpPost]

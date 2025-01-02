@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projects\\OnGIT\\DVCIChuan\\PlatFormAPI\\PlatFormAPI.csproj": {}
+    "D:\\Projects\\OnGit\\DVCIChuan\\PlatFormAPI\\PlatFormAPI.csproj": {}
   },
   "projects": {
-    "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\GM_DAL.csproj": {
+    "D:\\Projects\\OnGit\\DVCIChuan\\GM_DAL\\GM_DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\GM_DAL.csproj",
+        "projectUniqueName": "D:\\Projects\\OnGit\\DVCIChuan\\GM_DAL\\GM_DAL.csproj",
         "projectName": "GM_DAL",
-        "projectPath": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\GM_DAL.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\obj\\",
+        "projectPath": "D:\\Projects\\OnGit\\DVCIChuan\\GM_DAL\\GM_DAL.csproj",
+        "packagesPath": "C:\\Users\\Nghia\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\OnGit\\DVCIChuan\\GM_DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nghia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,7 +27,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -61,11 +61,11 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[6.0.36, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[6.0.36, )"
             }
           },
           "imports": [
@@ -84,42 +84,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Projects\\OnGIT\\DVCIChuan\\PlatFormAPI\\PlatFormAPI.csproj": {
+    "D:\\Projects\\OnGit\\DVCIChuan\\PlatFormAPI\\PlatFormAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\OnGIT\\DVCIChuan\\PlatFormAPI\\PlatFormAPI.csproj",
+        "projectUniqueName": "D:\\Projects\\OnGit\\DVCIChuan\\PlatFormAPI\\PlatFormAPI.csproj",
         "projectName": "PlatFormAPI",
-        "projectPath": "F:\\Projects\\OnGIT\\DVCIChuan\\PlatFormAPI\\PlatFormAPI.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\OnGIT\\DVCIChuan\\PlatFormAPI\\obj\\",
+        "projectPath": "D:\\Projects\\OnGit\\DVCIChuan\\PlatFormAPI\\PlatFormAPI.csproj",
+        "packagesPath": "C:\\Users\\Nghia\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\OnGit\\DVCIChuan\\PlatFormAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nghia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\GM_DAL.csproj": {
-                "projectPath": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\GM_DAL.csproj"
+              "D:\\Projects\\OnGit\\DVCIChuan\\GM_DAL\\GM_DAL.csproj": {
+                "projectPath": "D:\\Projects\\OnGit\\DVCIChuan\\GM_DAL\\GM_DAL.csproj"
               }
             }
           }
@@ -133,11 +132,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -167,7 +167,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

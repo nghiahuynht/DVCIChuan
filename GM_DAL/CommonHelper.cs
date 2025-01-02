@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GM_DAL
 {
-    public static class CommonHelper
+    public class CommonHelper
     {
         #region Check Null
         public static object CheckDateNull(object readerValue)

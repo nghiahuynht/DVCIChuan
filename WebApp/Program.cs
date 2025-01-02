@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddDbContext<GMDbContext>();
+builder.Services.AddSingleton<SQLAdoContext>();
 builder.Services.AddScoped<IUserInfoService, UserInfoService>();
 builder.Services.AddScoped<ICaptionTeamService, CaptionTeamService>();
 builder.Services.AddScoped<IRouteSaleService, RouteSaleService>();

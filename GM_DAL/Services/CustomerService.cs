@@ -16,11 +16,9 @@ namespace GM_DAL.Services
 {
     public class CustomerService:BaseService, ICustomerService
     {
-        private GMDbContext db;
         private SQLAdoContext adoContext;
-        public CustomerService(GMDbContext db, SQLAdoContext adoContext)
+        public CustomerService(SQLAdoContext adoContext)
         {
-            this.db = db;
             this.adoContext = adoContext;
         }
 
@@ -30,12 +28,11 @@ namespace GM_DAL.Services
             var res = new APIResultObject<CustomerModel>();
             try
             {
-               
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@CustomerId", CommonHelper.CheckIntNull(id));
                 using (var connection = adoContext.CreateConnection())
                 {
-                    var resultExcute = await connection.QueryAsync<CustomerModel>("sp_GetConnectInfoByComCode", parameters, commandType: CommandType.StoredProcedure);
+                    var resultExcute = await connection.QueryAsync<CustomerModel>("sp_GetCustomerById", parameters, commandType: CommandType.StoredProcedure);
                     res.data = resultExcute.FirstOrDefault();
                 }
             }

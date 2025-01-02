@@ -19,11 +19,9 @@ namespace GM_DAL.Services
 {
     public class RouteSaleService:BaseService, IRouteSaleService
     {
-        private GMDbContext db;
-        private SQLAdoContext adoContext;
-        public RouteSaleService(GMDbContext db, SQLAdoContext adoContext)
+        private SQLAdoContext adoContext;   
+        public RouteSaleService(SQLAdoContext adoContext)
         {
-            this.db = db;
             this.adoContext = adoContext;
         }
 
@@ -33,19 +31,13 @@ namespace GM_DAL.Services
             var res = new APIResultObject<List<RouteSaleModel>>();
             try
             {
-                var param = new SqlParameter[] {
-                        new SqlParameter("@TeamCode",teamCode),
-                };
-                ValidNullValue(param);
-                res.data = await db.Database.SqlQueryRaw<RouteSaleModel>($"EXEC sp_GetRouteByTeamCode @TeamCode", param).ToListAsync();
-
 
                 DynamicParameters parameters = new DynamicParameters();
-                parameters.Add("@CustomerId", CommonHelper.CheckIntNull(id));
+                parameters.Add("@TeamCode", CommonHelper.CheckStringNull(teamCode));
                 using (var connection = adoContext.CreateConnection())
                 {
-                    var resultExcute = await connection.QueryAsync<CustomerModel>("sp_GetConnectInfoByComCode", parameters, commandType: CommandType.StoredProcedure);
-                    res.data = resultExcute.FirstOrDefault();
+                    var resultExcute = await connection.QueryAsync<RouteSaleModel>("sp_GetRouteByTeamCode", parameters, commandType: CommandType.StoredProcedure);
+                    res.data = resultExcute.ToList();
                 }
 
 
@@ -65,21 +57,29 @@ namespace GM_DAL.Services
             var res = new PageSizeParamModel<SearchCustomerForSalerGridModel>();
             try
             {
-                var param = new SqlParameter[] {
-                        new SqlParameter("@TeamCode",filter.captionTeamCode),
-                        new SqlParameter("@RouteCode",filter.routeCode),
-                        new SqlParameter("@SaleUserName",filter.saleUserName),
-                        new SqlParameter("@CustGroupCode",filter.saleUserName),
-                        new SqlParameter("@Keyword",filter.keyword),
-                        new SqlParameter("@Page",filter.page),
-                        new SqlParameter("@PageSize",filter.pageSize),
-                        new SqlParameter { ParameterName = "@TotalRow", DbType = System.Data.DbType.Int64, Direction = System.Data.ParameterDirection.Output }
-                };
-                ValidNullValue(param);
-                res.results = await db.Database.SqlQueryRaw<SearchCustomerForSalerGridModel>($"EXEC sp_SearchCustomerBySaler @TeamCode,@RouteCode" +
-                    $",@SaleUserName,@CustGroupCode,@Keyword,@Page,@PageSize,@TotalRow OUT", param).ToListAsync();
-                res.page = filter.page;
-                res.pageSize = filter.pageSize;
+               
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@TeamCode", CommonHelper.CheckStringNull(filter.captionTeamCode));
+                parameters.Add("@RouteCode", CommonHelper.CheckStringNull(filter.routeCode));
+                parameters.Add("@SaleUserName", CommonHelper.CheckStringNull(filter.saleUserName));
+                parameters.Add("@CustGroupCode", CommonHelper.CheckStringNull(filter.custGroupCode));
+                parameters.Add("@Keyword", CommonHelper.CheckStringNull(filter.keyword));
+                parameters.Add("@Page", CommonHelper.CheckStringNull(filter.page));
+                parameters.Add("@PageSize", CommonHelper.CheckStringNull(filter.pageSize));
+                parameters.Add(name: "@TotalRow", dbType: DbType.Int64, direction: ParameterDirection.Output);
+
+                using (var connection = adoContext.CreateConnection())
+                {
+
+                    res.page = filter.page;
+                    res.pageSize = filter.pageSize;
+                    var resultExcute = await connection.QueryAsync<SearchCustomerForSalerGridModel>("sp_GetRouteByTeamCode", parameters, commandType: CommandType.StoredProcedure);
+                    res.totalRow = parameters.Get<long>("TotalRow");
+                    res.results = resultExcute.ToList();
+                   
+                }
+
+
             }
             catch (Exception ex)
             {

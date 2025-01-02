@@ -1,26 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\Projects\\OnGIT\\DVCIChuan\\PlatFormAPI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\dvcichuan\\gm_dal\\services\\routesaleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\dvcichuan\\gm_dal\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\dvcichuan\\gm_dal\\services\\userinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\dvcichuan\\gm_dal\\models\\datatabledefaultparammodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\dvcichuan\\gm_dal\\models\\user\\searchuserfiltermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50DB3170-2994-4836-BC5D-B8FE23D0F192}|..\\GM_DAL\\GM_DAL.csproj|f:\\projects\\ongit\\dvcichuan\\gm_dal\\models\\menumodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\Projects\\OnGit\\DVCIChuan\\PlatFormAPI\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -28,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -45,84 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RouteSaleService.cs",
-              "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Services\\RouteSaleService.cs",
-              "RelativeDocumentMoniker": "..\\GM_DAL\\Services\\RouteSaleService.cs",
-              "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Services\\RouteSaleService.cs",
-              "RelativeToolTip": "..\\GM_DAL\\Services\\RouteSaleService.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAABoAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T11:07:21.467Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CustomerService.cs",
-              "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Services\\CustomerService.cs",
-              "RelativeDocumentMoniker": "..\\GM_DAL\\Services\\CustomerService.cs",
-              "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Services\\CustomerService.cs",
-              "RelativeToolTip": "..\\GM_DAL\\Services\\CustomerService.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAABMAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T07:17:39.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DataTableDefaultParamModel.cs",
-              "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Models\\DataTableDefaultParamModel.cs",
-              "RelativeDocumentMoniker": "..\\GM_DAL\\Models\\DataTableDefaultParamModel.cs",
-              "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Models\\DataTableDefaultParamModel.cs",
-              "RelativeToolTip": "..\\GM_DAL\\Models\\DataTableDefaultParamModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T08:22:26.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserInfoService.cs",
-              "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Services\\UserInfoService.cs",
-              "RelativeDocumentMoniker": "..\\GM_DAL\\Services\\UserInfoService.cs",
-              "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Services\\UserInfoService.cs",
-              "RelativeToolTip": "..\\GM_DAL\\Services\\UserInfoService.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAhwHIAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T16:59:50.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SearchUserFilterModel.cs",
-              "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Models\\User\\SearchUserFilterModel.cs",
-              "RelativeDocumentMoniker": "..\\GM_DAL\\Models\\User\\SearchUserFilterModel.cs",
-              "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Models\\User\\SearchUserFilterModel.cs",
-              "RelativeToolTip": "..\\GM_DAL\\Models\\User\\SearchUserFilterModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T08:21:31.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MenuModel.cs",
-              "DocumentMoniker": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Models\\MenuModel.cs",
-              "RelativeDocumentMoniker": "..\\GM_DAL\\Models\\MenuModel.cs",
-              "ToolTip": "F:\\Projects\\OnGIT\\DVCIChuan\\GM_DAL\\Models\\MenuModel.cs",
-              "RelativeToolTip": "..\\GM_DAL\\Models\\MenuModel.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAIAywA0AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T17:17:44.993Z",
-              "EditorCaption": ""
             }
           ]
         }

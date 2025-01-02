@@ -13,18 +13,15 @@ using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
-using GM_DAL;
 
 namespace GM_DAL.Services
 {
     public class CaptionTeamService:BaseService,ICaptionTeamService
     {
 
-        private GMDbContext db;
         private SQLAdoContext adoContext;
-        public CaptionTeamService(GMDbContext db, SQLAdoContext adoContext)
+        public CaptionTeamService(SQLAdoContext adoContext)
         {
-            this.db = db;
             this.adoContext = adoContext;
         }
 
@@ -34,15 +31,17 @@ namespace GM_DAL.Services
             var res = new APIResultObject<List<CaptionTeamModel>>();
             try
             {
-                
 
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@SaleUserName", CommonHelper.CheckStringNull(saleUserName));
                 using (var connection = adoContext.CreateConnection())
                 {
-                    var resultExcute = await connection.QueryAsync<CaptionTeamModel>("sp_GetConnectInfoByComCode", parameters, commandType: CommandType.StoredProcedure);
+                    var resultExcute = await connection.QueryAsync<CaptionTeamModel>("sp_GetTeamBySaleUser", parameters, commandType: CommandType.StoredProcedure);
                     res.data = resultExcute.ToList();
                 }
+
+
+
             }
             catch (Exception ex)
             {

@@ -9,10 +9,8 @@ namespace GM_DAL.Services
 {
     public class ReportService:BaseService, IReportService
     {
-        private GMDbContext db;
-        public ReportService(GMDbContext db)
+        public ReportService()
         {
-            this.db = db;
         }
 
 

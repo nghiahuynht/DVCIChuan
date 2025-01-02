@@ -1,13 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 
 namespace GM_DAL
 {
@@ -15,7 +14,7 @@ namespace GM_DAL
     {
         private IHttpContextAccessor _httpContextAccessor;
         private readonly IConfiguration _configuration;
-        private string? _connectionString;
+        private string _connectionString;
         public SQLAdoContext(IConfiguration configuration, IHttpContextAccessor httpContextAccessor)
         {
             _httpContextAccessor = httpContextAccessor;
@@ -28,7 +27,7 @@ namespace GM_DAL
 
         public IDbConnection CreateConnection()
         {
-            string? connectionName = _httpContextAccessor?.HttpContext?.Request.Headers["ComCode"];
+            string connectionName = _httpContextAccessor?.HttpContext?.Request.Headers["ComCode"];
 
             if (string.IsNullOrEmpty(connectionName))
             {

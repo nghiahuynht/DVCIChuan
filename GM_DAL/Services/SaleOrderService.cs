@@ -12,15 +12,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GM_DAL.APIModels.SaleOrder;
+using Dapper;
+using System.Data;
 
 namespace GM_DAL.Services
 {
     public class SaleOrderService:BaseService, ISaleOrderService
     {
-        private GMDbContext db;
-        public SaleOrderService(GMDbContext db)
+        private SQLAdoContext adoContext;
+        public SaleOrderService(SQLAdoContext adoContext)
         {
-            this.db = db;
+            this.adoContext = adoContext;
         }
 
 
@@ -30,19 +32,20 @@ namespace GM_DAL.Services
             var res = new APIResultObject<ResCommon>();
             try
             {
-                var param = new SqlParameter[] {
-                        new SqlParameter("@Id",model.id),
-                        new SqlParameter("@CustomerId",model.customerId),
-                        new SqlParameter("@SaleUserName",model.saleUserCode),
-                        new SqlParameter("@VAT",model.vat),
-                        new SqlParameter("@PaymentType",model.PaymentType)
-                };
-                ValidNullValue(param);
-                var dataExutte = await db.Database.SqlQueryRaw<ResCommon>($"EXEC sp_SaveOrderHeader @Id,@CustomerId,@SaleUserName,@VAT,@PaymentType", param).ToListAsync();
-                if (dataExutte != null && dataExutte.Any())
+               
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@Id", CommonHelper.CheckLongNull(model.id));
+                parameters.Add("@CustomerId", CommonHelper.CheckIntNull(model.customerId));
+                parameters.Add("@SaleUserName", CommonHelper.CheckStringNull(model.saleUserCode));
+                parameters.Add("@VAT", CommonHelper.CheckDecimalNull(model.vat));
+                parameters.Add("@PaymentType", CommonHelper.CheckStringNull(model.PaymentType));
+
+                using (var connection = adoContext.CreateConnection())
                 {
-                    res.data = dataExutte.FirstOrDefault();
+                    var resultExcute = await connection.QueryAsync<ResCommon>("sp_SaveOrderHeader", parameters, commandType: CommandType.StoredProcedure);
+                    res.data = resultExcute.FirstOrDefault();
                 }
+
             }
             catch (Exception ex)
             {
@@ -62,20 +65,21 @@ namespace GM_DAL.Services
                 {
                     foreach (var item in items)
                     {
-                        var param = new SqlParameter[] {
-                                new SqlParameter("@Id",item.id),
-                                new SqlParameter("@OrderId",item.orderId),
-                                new SqlParameter("@ItemCode",item.itemCode),
-                                new SqlParameter("@Price",item.priceWithVAT),
-                                new SqlParameter("@Unit",item.unit),
-                                new SqlParameter("@Quantity",item.quantity),
-                        };
-                        ValidNullValue(param);
-                        var dataExutte = await db.Database.SqlQueryRaw<ResCommon>($"EXEC sp_SaveOrderLineItem @Id,@OrderId,@ItemCode,@Price,@Unit,@Quantity", param).ToListAsync();
-                        if (dataExutte != null && dataExutte.Any())
+
+                        DynamicParameters parameters = new DynamicParameters();
+                        parameters.Add("@Id", CommonHelper.CheckLongNull(item.id));
+                        parameters.Add("@OrderId", CommonHelper.CheckLongNull(item.orderId));
+                        parameters.Add("@ItemCode", CommonHelper.CheckStringNull(item.itemCode));
+                        parameters.Add("@Price", CommonHelper.CheckDecimalNull(item.priceWithVAT));
+                        parameters.Add("@Unit", CommonHelper.CheckStringNull(item.unit));
+                        parameters.Add("@Quantity", CommonHelper.CheckStringNull(item.quantity));
+                        using (var connection = adoContext.CreateConnection())
                         {
-                            res = dataExutte.FirstOrDefault();
+                            var resultExcute = await connection.QueryAsync<ResCommon>("sp_SaveOrderLineItem", parameters, commandType: CommandType.StoredProcedure);
+                            res = resultExcute.FirstOrDefault();
                         }
+
+
                     }
                 }
 
@@ -96,22 +100,33 @@ namespace GM_DAL.Services
             var res = new PageSizeParamModel<SaleOrderModel>();
             try
             {
-                var param = new SqlParameter[] {
-                        new SqlParameter("@TeamCode",filter.captionTeamCode),
-                        new SqlParameter("@RouteCode",filter.routeCode),
-                        new SqlParameter("@SaleUserName",filter.saleUserName),
-                        new SqlParameter("@FromDate",filter.fromDate),
-                        new SqlParameter("@ToDate",filter.toDate),
-                        new SqlParameter("@Keyword",filter.keyword),
-                        new SqlParameter("@Page",filter.page),
-                        new SqlParameter("@PageSize",filter.pageSize),
-                        new SqlParameter { ParameterName = "@TotalRow", DbType = System.Data.DbType.Int64, Direction = System.Data.ParameterDirection.Output }
-                };
-                ValidNullValue(param);
-                res.results = await db.Database.SqlQueryRaw<SaleOrderModel>($"EXEC sp_SearchOrderBySalerMobile @TeamCode,@RouteCode" +
-                    $",@SaleUserName,@FromDate,@ToDate,@Keyword,@Page,@PageSize,@TotalRow OUT", param).ToListAsync();
-                res.page = filter.page;
-                res.pageSize = filter.pageSize;
+               
+
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@TeamCode", CommonHelper.CheckStringNull(filter.captionTeamCode));
+                parameters.Add("@RouteCode", CommonHelper.CheckStringNull(filter.routeCode));
+                parameters.Add("@SaleUserName", CommonHelper.CheckStringNull(filter.saleUserName));
+                parameters.Add("@FromDate", CommonHelper.CheckStringNull(filter.fromDate));
+                parameters.Add("@ToDate", CommonHelper.CheckStringNull(filter.toDate));
+                parameters.Add("@Keyword", CommonHelper.CheckStringNull(filter.keyword));
+                parameters.Add("@Page", CommonHelper.CheckStringNull(filter.page));
+                parameters.Add("@PageSize", CommonHelper.CheckStringNull(filter.pageSize));
+                parameters.Add(name: "@TotalRow", dbType: DbType.Int64, direction: ParameterDirection.Output);
+
+                using (var connection = adoContext.CreateConnection())
+                {
+
+                    res.page = filter.page;
+                    res.pageSize = filter.pageSize;
+                    var resultExcute = await connection.QueryAsync<SaleOrderModel>("sp_SearchOrderBySalerMobile", parameters, commandType: CommandType.StoredProcedure);
+                    res.totalRow = parameters.Get<long>("TotalRow");
+                    res.results = resultExcute.ToList();
+
+                }
+
+
+
+
             }
             catch (Exception ex)
             {
@@ -126,17 +141,30 @@ namespace GM_DAL.Services
             var res = new PageSizeParamModel<SaleOrderModel>();
             try
             {
-                var param = new SqlParameter[] {
-                        new SqlParameter("@CustomerCode",filter.customerCode),
-                        new SqlParameter("@Year",filter.year),
-                        new SqlParameter("@Page",filter.page),
-                        new SqlParameter("@PageSize",filter.pageSize),
-                        new SqlParameter { ParameterName = "@TotalRow", DbType = System.Data.DbType.Int64, Direction = System.Data.ParameterDirection.Output }
-                };
-                ValidNullValue(param);
-                res.results = await db.Database.SqlQueryRaw<SaleOrderModel>($"EXEC sp_SearchOrderByCustomerMobile @CustomerCode,@Year,@Page,@PageSize,@TotalRow OUT", param).ToListAsync();
-                res.page = filter.page;
-                res.pageSize = filter.pageSize;
+               
+
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@CustomerCode", CommonHelper.CheckStringNull(filter.customerCode));
+                parameters.Add("@Year", CommonHelper.CheckIntNull(filter.year));
+                parameters.Add("@Page", CommonHelper.CheckIntNull(filter.page));
+                parameters.Add("@PageSize", CommonHelper.CheckIntNull(filter.pageSize));
+                parameters.Add(name: "@TotalRow", dbType: DbType.Int64, direction: ParameterDirection.Output);
+
+
+                using (var connection = adoContext.CreateConnection())
+                {
+
+                    res.page = filter.page;
+                    res.pageSize = filter.pageSize;
+                    var resultExcute = await connection.QueryAsync<SaleOrderModel>("sp_SaveOrderLineItem", parameters, commandType: CommandType.StoredProcedure);
+                    res.totalRow = parameters.Get<long>("TotalRow");
+                    res.results = resultExcute.ToList();
+                }
+
+
+
+
+
             }
             catch (Exception ex)
             {

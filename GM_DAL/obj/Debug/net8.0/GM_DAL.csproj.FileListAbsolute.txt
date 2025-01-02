@@ -23,3 +23,15 @@ F:\Projects\OnGIT\DVCIChuan\GM_DAL\obj\Debug\net8.0\GM_DAL.dll
 F:\Projects\OnGIT\DVCIChuan\GM_DAL\obj\Debug\net8.0\refint\GM_DAL.dll
 F:\Projects\OnGIT\DVCIChuan\GM_DAL\obj\Debug\net8.0\GM_DAL.pdb
 F:\Projects\OnGIT\DVCIChuan\GM_DAL\obj\Debug\net8.0\ref\GM_DAL.dll
+D:\Projects\OnGit\DVCIChuan2\GM_DAL\bin\Debug\net8.0\GM_DAL.deps.json
+D:\Projects\OnGit\DVCIChuan2\GM_DAL\bin\Debug\net8.0\GM_DAL.dll
+D:\Projects\OnGit\DVCIChuan2\GM_DAL\bin\Debug\net8.0\GM_DAL.pdb
+D:\Projects\OnGit\DVCIChuan2\GM_DAL\obj\Debug\net8.0\GM_DAL.csproj.AssemblyReference.cache
+D:\Projects\OnGit\DVCIChuan2\GM_DAL\obj\Debug\net8.0\GM_DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\OnGit\DVCIChuan2\GM_DAL\obj\Debug\net8.0\GM_DAL.AssemblyInfoInputs.cache
+D:\Projects\OnGit\DVCIChuan2\GM_DAL\obj\Debug\net8.0\GM_DAL.AssemblyInfo.cs
+D:\Projects\OnGit\DVCIChuan2\GM_DAL\obj\Debug\net8.0\GM_DAL.csproj.CoreCompileInputs.cache
+D:\Projects\OnGit\DVCIChuan2\GM_DAL\obj\Debug\net8.0\GM_DAL.dll
+D:\Projects\OnGit\DVCIChuan2\GM_DAL\obj\Debug\net8.0\refint\GM_DAL.dll
+D:\Projects\OnGit\DVCIChuan2\GM_DAL\obj\Debug\net8.0\GM_DAL.pdb
+D:\Projects\OnGit\DVCIChuan2\GM_DAL\obj\Debug\net8.0\ref\GM_DAL.dll

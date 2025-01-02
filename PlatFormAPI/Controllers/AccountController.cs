@@ -19,10 +19,10 @@ namespace PlatFormAPI.Controllers
 
         [HttpPost]
         [ProducesResponseType(typeof(APIResultObject<AuthenSuccessModel>), StatusCodes.Status200OK)]
-        public APIResultObject<AuthenSuccessModel> Login(string userName,string pass)
+        public async Task<APIResultObject<AuthenSuccessModel>> Login(string userName,string pass)
         {
             string passEncr = EncrypMD5(pass);
-            var res = _userInfoService.Login(userName, passEncr);
+            var res =await _userInfoService.Login(userName, passEncr);
             return res;
         }
 
